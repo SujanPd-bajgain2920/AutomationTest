@@ -8,7 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    headless: false,
+    headless: true,
     trace: 'on-first-retry',
     actionTimeout: 30000,       // 30s per action
     navigationTimeout: 30000,   // 30s for page.goto
